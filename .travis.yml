@@ -7,14 +7,14 @@ install:
 script:
 - CI=false npm run build
 deploy:
-  provider: s3
+  provider: elasticbeanstalk
   access_key_id: $AWS_ACCESS_ID
   secret_access_key: $AWS_SECRET_ID
-  bucket: 'devtravis.com'
-  local_dir: build
-  region: us-west-2
+  region: us-east-1
+  app: "node-js-app-bs1"
+  env: "NodeJsAppBs1-env"
+  bucket_name: "elasticbeanstalk-us-east-1-736998360651"
   skip_cleanup: true
   on:
-    branch: master
-
+    branch: s3-elasticbeanstalk-node
 
