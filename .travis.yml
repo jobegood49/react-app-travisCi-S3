@@ -5,7 +5,7 @@ node_js:
 install:
 - npm install
 script:
-- CI=false npm run test
+- CI=false npm start
 deploy:
   provider: elasticbeanstalk
   access_key_id: $AWS_ACCESS_ID
