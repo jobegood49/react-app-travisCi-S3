@@ -16,6 +16,6 @@ deploy:
   bucket_name: "elasticbeanstalk-us-east-1-736998360651"
   skip_cleanup: true
   on:
-    branch: s3-elasticbeanstalk-node
+    branch: jonathan-nodegen-elasticbeanstalk
 
 
